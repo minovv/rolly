@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js" defer></script>	
+  <title>Rolly - Advanced Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-	<div id="list">
-	</div>
-	<form id="new-item-form">
-		<label for="item-input">New Item</label>
-		<input type="text" id="item-input">
-		<button type="submit">Add Item</button>
-	</form>	
+  <ul id="list">
+    
+  </ul>
+  
+  <form id="new-todo-form">
+    <label for="todo-input">New Todo</label>
+    <input type="text" id="todo-input">
+    <button type="submit">Add Todo</button>
+  </form>
+
+  <template id="list-item-template">
+    <li class="list-item">
+      <label class="list-item-label">
+        <input type="checkbox" data-list-item-checkbox>
+        <span data-list-item-text></span>
+      </label>
+      <button data-button-delete>Delete</button>
+    </li>
+  </template>
 </body>
 </html>
